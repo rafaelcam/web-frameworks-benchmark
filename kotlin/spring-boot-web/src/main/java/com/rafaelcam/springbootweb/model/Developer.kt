@@ -1,4 +1,4 @@
-package com.rafaelcam.springbootwebflux.model
+package com.rafaelcam.springbootweb.model
 
 import java.time.Instant
 import java.util.*

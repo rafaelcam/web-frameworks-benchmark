@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    default-property-inclusion: non_null
+    deserialization:
+      fail_on_unknown_properties: false
+    serialization:
+      fail_on_empty_beans: false
+      write_dates_as_timestamps: false
+    property-naming-strategy: SNAKE_CASE
+
+  datasource:
+    hikari:
+      connection-timeout: 2000
+      leak-detection-threshold: 6000
+      maximum-pool-size: 20
+      minimum-idle: 10
+      pool-name: SpringBootWebRWPool
+      schema: public
+    url: jdbc:postgresql://localhost:54320/web-frameworks-benchmark
+    username: postgres
+    password: postgres

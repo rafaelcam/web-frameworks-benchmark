@@ -1,9 +1,9 @@
-package com.rafaelcam.springbootwebflux.model
+package com.rafaelcam.springbootweb.webservice.api
 
 import java.time.Instant
 import java.util.*
 
-data class Developer(
+data class DeveloperResponse(
         val id: UUID,
         val name: String,
         val age: Int,
