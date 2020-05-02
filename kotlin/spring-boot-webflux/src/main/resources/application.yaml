@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    default-property-inclusion: non_null
+    deserialization:
+      fail_on_unknown_properties: false
+    serialization:
+      fail_on_empty_beans: false
+      write_dates_as_timestamps: false
+    property-naming-strategy: SNAKE_CASE
+
+  r2dbc:
+    name: spring-boot-webflux
+    url: r2dbc:pool:postgresql://localhost:54320/web-frameworks-benchmark?schema=public
+    username: postgres
+    password: postgres
+    pool:
+      initial-size: 10
+      max-size: 20
+      max-idle-time: 10m
+      validation-query: SELECT 1
