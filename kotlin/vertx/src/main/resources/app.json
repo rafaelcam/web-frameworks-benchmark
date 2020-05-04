@@ -1,0 +1,14 @@
+{
+  "server": {
+    "port": 8080
+  },
+  "database": {
+    "host": "localhost",
+    "port": 54320,
+    "database": "web-frameworks-benchmark",
+    "schema": "public",
+    "username": "postgres",
+    "password": "postgres",
+    "connection_pool_size": 20
+  }
+}
